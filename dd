@@ -1,0 +1,37 @@
+<?php
+if(isset($_POST['submit']))
+{
+ $un=$_POST['Email'];
+ $pw=$_POST['Password'];
+ 
+ if($un=='Email'  && $=='Password')
+ {
+ 
+   header("location:home.html");
+   exit();
+   else  echo "Invalid Username?password"
+}
+?>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+</head>
+<body>
+    <div id="main">
+        <h1>SAMPLE LOGIN </h1>
+
+        <form action="login.php" method="POST">
+   Email
+ <input type "text" name ="Email" class ="text" autocomplete="off" required>
+     <br> </br>
+ Password
+<input type="password" name = "Password" class ="text" required>
+     <br> </br>
+<input type="Submit" name="submit" id ="sub">
+
+        </form>
+</body>
+</html>
